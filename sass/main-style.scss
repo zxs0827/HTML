@@ -1,4 +1,43 @@
-@import "variable";
+$background-color: rgba(92, 90, 120, 0.7);
+$background-image: url("../img/bk.jpg");
+$background-image-holiday: url("../img/love.png");
+$background-image-shadow: url("../img/shadow-normal.png");
+
+$background-header-color: #191919;
+$background-footer-color: #191919;
+$background-black-opacity-color: rgba(0,0,0,0.7);
+
+$border-color: rgba(0,0,0,0.2);
+$border-width: 1px;
+$border-style: solid;
+$border: $border-width $border-style $border-color;
+$border-radius: 2px;
+
+$box-shadow-color: #FFF;
+$box-shadow: 0px 0px 7px $box-shadow-color;
+
+$font-color: #FFF;
+$font-gray-color: darken($font-color,40%);
+$font-warn-color: #FFA864;
+$font-aside-color: #AAA;
+$font-family: "Droid Sans Fallbac","Microsoft YaHei";
+$font-size-base: 24px;
+$font-size-large: 30px;
+$font-size-small: 20px;
+
+$height: 720px;
+$height-2: 604px;
+$height-holiday: 452px;
+$height-header: 68px;
+$height-footer: 48px;
+
+$width: 100%;
+$width-1: 1280px;
+$width-2: 680px;
+
+$outline: 1px solid #3A87AD;
+
+$shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
 
 @mixin center-box
  {
@@ -37,6 +76,14 @@
 @mixin mask{
     background-color: rgba(0,0,0,0.1);
 }
+
+@mixin blackOpacity{
+    position: fixed;
+    width: $width;
+    height: $height;
+    background-color: $background-black-opacity-color;
+}
+
 
 * {
     margin: 0px;
@@ -140,6 +187,9 @@ nav{
 
 }
 
+.black-opacity{
+    @include blackOpacity;
+}
 .button{
     @include button;
 }
@@ -177,9 +227,11 @@ nav{
 
 .holiday-box{
     width: $width-2 !important;
-    height: $height-3 !important; 
+    height: $height-holiday !important; 
     background-image: $background-image-holiday;
     float: left;
+    margin-top: 10px;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -192,6 +244,15 @@ nav{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.holiday-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.holiday-things{
+    text-indent: 2em;
 }
 
 .item-box{
@@ -303,12 +364,12 @@ nav{
 }
 
 .music_title_item{
-    color: $font-gray-color-2; 
+    color: $font-gray-color; 
 }
 
-#blank_box,#bottom_box{
+/* #blank_box,#bottom_box{
     border: $border;
-}
+} */
 
 /*--------------*/
 /* weather.html */
@@ -365,6 +426,10 @@ nav{
     border-bottom: $border;
 }
 
+#exmoney_info{
+    color: $font-aside-color;
+}
+
 /*-----------------------*/
 /* room-imformation.html */
 /*-----------------------*/
@@ -414,3 +479,93 @@ nav{
 .pin_sub{
     @extend .item-box;
 }
+
+.pin_zy{
+    color: $font-aside-color;
+}
+
+/*------------*/
+/* group.html */
+/*------------*/
+
+.groupbuy_title{
+    @extend .shadow;
+}
+
+.group_bottom{
+    border-top: $border;
+}
+
+.group_title{
+    @extend .mask;
+    border: $border;
+}
+.groupbuy_title_item{
+    color: $font-gray-color;
+}
+
+/*--------------*/
+/* tv-list.html */
+/*--------------*/
+
+.tv_left_top{
+    @extend .item-box;
+}
+
+.navsite{
+    @extend .item-box;
+    border-bottom: $border;
+}
+
+.tv_box,.tv_right,.box_top,.box_body,.sub{
+    @extend .item-box;
+}
+
+.tv_box_logo{
+    border-right: $border;
+}
+
+/*------------*/
+/* movie.html */
+/*------------*/
+
+.movie_li_bottom{
+    @extend .item-box;
+}
+
+.tv_player{
+    @extend .item-box;
+}
+
+.box_top1,.box_body2,.box_top,.box_body{
+    @extend .item-box;
+    border: $border;
+}
+
+#info_1 {
+    color: $font-aside-color;
+}
+
+#bg{
+    @extend .black-opacity;
+}
+
+.trailers_ment li {
+    color: $font-gray-color;
+}
+
+.Plot_right_bg {
+    @extend .item-box;
+}
+
+.Plot_li_box{
+    @extend .item-box;
+}
+
+.sub_1,.sub_2{
+    @extend .item-box;
+}
+
+/*--------------*/
+/* my-bill.html */
+/*--------------*/
