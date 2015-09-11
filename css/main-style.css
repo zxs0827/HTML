@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html {
+  font-size: 24px;
+  font-family: "Droid Sans Fallbac", "Microsoft YaHei";
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  background-image: url("../img/bk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  height: 68px;
+  background-color: #191919; }
+
+footer {
+  width: 100%;
+  height: 48px;
+  background-color: #191919; }
+
+img {
+  border: 0; }
+
+input {
+  outline: none; }
+
+li {
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+/* ul::after{
+  content: "";
+  clear: both;
+  display: table;
+} */
+/* 
+.active{
+    @include active;
+} */
+.animation, .on {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  transition: -webkit-transform 0.5s; }
+
+.black-opacity, #bg {
+  position: fixed;
+  width: 100%;
+  height: 720px;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.button {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px; }
+
+.center-box {
+  width: 100%;
+  height: 604px;
+  overflow: hidden;
+  position: relative; }
+
+.clear {
+  clear: both; }
+
+.color-box, .button, .element-block, .dialog, .item-box, .main-box, .thl_banner_li, .hotel_hidden_item, .music_title, .music_main_li, #blank_box, .music_bottom_bt, #bottom_box, .abslt_box, .weather_top_box, .tomorrow_weather, .after_weather, .exmoney_bottom_info, #chanschu, #fanhui, .pin_sub, .tv_left_top, .navsite, .tv_box, .tv_right, .box_top, .box_body, .sub, .movie_li_bottom, .tv_player, .box_top1, .box_body2, .Plot_right_bg, .Plot_li_box, .sub_1, .sub_2, .nav-box, .title, .title-box, .holiday-box figcaption {
+  background-color: rgba(92, 90, 120, 0.7); }
+
+.element-block, .dialog, .item-box, .main-box, .thl_banner_li, .hotel_hidden_item, .music_title, .music_main_li, #blank_box, .music_bottom_bt, #bottom_box, .abslt_box, .weather_top_box, .tomorrow_weather, .after_weather, .exmoney_bottom_info, #chanschu, #fanhui, .pin_sub, .tv_left_top, .navsite, .tv_box, .tv_right, .box_top, .box_body, .sub, .movie_li_bottom, .tv_player, .box_top1, .box_body2, .Plot_right_bg, .Plot_li_box, .sub_1, .sub_2, .nav-box, .title, .title-box {
+  position: relative; }
+
+.footer {
+  position: fixed;
+  bottom: 0px; }
+
+.header {
+  position: fixed;
+  top: 0px; }
+
+.holiday-box {
+  width: 680px !important;
+  height: 452px !important;
+  background-image: url("../img/love.png");
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: relative; }
+
+.holiday-box figcaption {
+  position: absolute;
+  bottom: 0px;
+  padding: 15px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.holiday-name {
+  font-size: 20px;
+  font-weight: bold; }
+
+.holiday-things {
+  text-indent: 2em; }
+
+.mask, .weather_detial_text, .other_day_text, .weather_right_date, .weather_source, .tomorrow_weather_title, .after_weather_title, .timezone_item, .timezone_map, .exmoney_active, .exmoney_zhzsj, .roominfo_holder, .information_info, .information_content, .language_item span, .group_title {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.outline {
+  outline: 1px solid #3A87AD; }
+
+.reflect, .thl_banner_li_bottom {
+  /* -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,black); */ }
+
+.reflect::after, .thl_banner_li_bottom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(rgba(92, 90, 120, 0.7), transparent 99%);
+  bottom: -41px;
+  left: 0px; }
+
+.shadow, .music_title, .roominfo_title, .information_title, #language_h1, .groupbuy_title {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5); }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*------------*/
+/* index.html */
+/*------------*/
+.thl_top_menu_item {
+  color: #999999; }
+
+.on {
+  background-image: url("../img/shadow-normal.png"); }
+
+/*----------------------*/
+/* hotel-construct.html */
+/*----------------------*/
+/*------------*/
+/* music.html */
+/*------------*/
+.music_main_li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.music_title_item {
+  color: #999999; }
+
+/* #blank_box,#bottom_box{
+    border: $border;
+} */
+/*--------------*/
+/* weather.html */
+/*--------------*/
+.weather_left_country, .weather_right_date, .weather_detial_img, .weather_detial_text, .weather_source, .tomorrow_weather_title, .after_weather_title, .other_day_img, .other_day_text {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*---------------*/
+/* timezoon.html */
+/*---------------*/
+.timezone_item {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2); }
+
+.timezone_country_name_box, .timezone_country_time_box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*--------------*/
+/* exmoney.html */
+/*--------------*/
+.exmoney_active {
+  border-right: 1px solid rgba(0, 0, 0, 0.2); }
+
+.country_img, .country_name, .country_exchange, .exmoney_zhzsj, .country_img_ex, .country_name_ex, .country_exchange_ex {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+#exmoney_info {
+  color: #AAA; }
+
+/*-----------------------*/
+/* room-imformation.html */
+/*-----------------------*/
+.roominfo_title, .information_title {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+.roominfo_title, .roominfo_title_title > li, .roominfo_hidden_box > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.roominfo_holder {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+.information_info, .information_content {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*---------------*/
+/* language.html */
+/*---------------*/
+.language_item {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*----------*/
+/* pin.html */
+/*----------*/
+.pin_zy {
+  color: #AAA; }
+
+/*------------*/
+/* group.html */
+/*------------*/
+.group_bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+.group_title {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+.groupbuy_title_item {
+  color: #999999; }
+
+/*--------------*/
+/* tv-list.html */
+/*--------------*/
+.navsite {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.tv_box_logo {
+  border-right: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*------------*/
+/* movie.html */
+/*------------*/
+.box_top1, .box_body2, .box_top, .box_body {
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+#info_1 {
+  color: #AAA; }
+
+.trailers_ment li {
+  color: #999999; }
+
+/*--------------*/
+/* my-bill.html */
+/*--------------*/
+
+/*# sourceMappingURL=main-style.css.map */

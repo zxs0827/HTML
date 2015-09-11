@@ -1,0 +1,39 @@
+$valentine-map:(
+	background-color: rgba(208, 2, 27, 0.5),
+	background-image: url("../img/bk-love.jpg"),
+	background-image-holiday: url("../img/love.png"),
+	background-image-shadow: url("../img/shadow-love.png"),
+	font-gray-color: #F5A623
+	);
+
+@mixin theme($background-color,$background-image,$background-image-holiday,$background-image-shadow,$font-gray-color)
+{
+	body{
+		background-image: $background-image;
+	}
+
+	.color-box{
+		background-color: $background-color;
+	}
+
+	.item-box{
+		background-color: $background-color;
+	}
+	.thl_banner_li{
+		background-color: $background-color;
+	}
+
+	.holiday-box{
+		background-image: $background-image-holiday;
+	}
+
+	.on{
+    	background-image: $background-image-shadow;
+	}
+
+	.font-gray-color{
+		color: $font-gray-color;
+	}
+}
+
+@include theme($valentine-map...);
