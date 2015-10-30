@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+context.lineJoin = '${1:round/bevel/miter}';
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lineJoin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

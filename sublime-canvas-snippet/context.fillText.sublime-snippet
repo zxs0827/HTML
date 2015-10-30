@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+context.fillText('${1}',${2:canvas.width/2},${3:canvas.height/2});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fillText</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,10 @@
+<!-- 线性渐变 -->
+<snippet>
+	<content><![CDATA[
+var linearGradient = context.createLinearGradient(0, 0, canvas.width, 0);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>linearGradient</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
