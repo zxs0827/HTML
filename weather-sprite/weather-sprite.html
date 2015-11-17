@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="weather-sprite.css">
+    <style type="text/css">
+        div{
+            width: 71px;
+            height: 71px;
+            background-color: black;
+            background-image: url('weather-sprite.png');
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<img src="weather-sprite.png" height="284" width="994" alt="" style="background-color: black;">
+
+<section style="clear: both"></section>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        for(var i = 0 ; i < 43 ; i++){
+            $("<div class = 'weather-"+ i +"'>").appendTo('body');
+        }
+
+    });
+</script>
+
+</body>
+</html>
