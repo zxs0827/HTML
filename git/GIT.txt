@@ -1,0 +1,302 @@
+------ 晓航帮忙 拉取的 git 命令记录-----------
+
+zxs@ZXS-PC /f/works/V001R001 (master)
+$ git commit -m"@@@ 20151218 zhanghs ||| tv.html Ò³ÃæÓÅ»¯"
+[master 1302cbb] @@@ 20151218 zhanghs ||| tv.html Ò³ÃæÓÅ»¯
+ 2 files changed, 124 insertions(+), 84 deletions(-)
+
+zxs@ZXS-PC /f/works/V001R001 (master)
+$ git push origin master
+Counting objects: 21, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.95 KiB | 0 bytes/s, done.
+Total 11 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6)
+remote: Processing changes: refs: 1, done
+To ssh://192.168.1.161:29418/V001R001
+   bebecad..1302cbb  master -> master
+
+zxs@ZXS-PC /f/works/V001R001 (master)
+$ cd ..
+
+zxs@ZXS-PC /f/works
+$ ls
+V001R001  desktop.ini  logo.ico
+
+zxs@ZXS-PC /f/works
+$ git clone ssh://192.168.1.161:29418/FrontEnd-TermWebUI
+Cloning into 'FrontEnd-TermWebUI'...
+remote: Counting objects: 1989, done
+remote: Finding sources: 100% (1989/1989)
+Receivinrg objects: 100% (1989/1989), 48.01 MiB | 11.46 MiB/s, done.
+Resolving deltas:   1% (3/282)   used 1987 (delta 282)
+Resolving deltas: 100% (282/282), done.
+Checking connectivity... done.
+
+zxs@ZXS-PC /f/works
+$ ls
+FrontEnd-TermWebUI  V001R001  desktop.ini  logo.ico
+
+zxs@ZXS-PC /f/works
+$ cd FrontEnd-TermWebUI/
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/Hotel-1001-BeijinXinYi
+  origin/Model-Apple
+  origin/Model-Banana
+  origin/Model-Cherry
+  origin/master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (master)
+$ git branch
+* master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (master)
+$ git checkout -b Model-Apple or
+origin/HEAD                     origin/Model-Apple              origin/Model-Cherry
+origin/Hotel-1001-BeijinXinYi   origin/Model-Banana             origin/master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (master)
+$ git checkout -b Model-Apple origin/Mod
+origin/Model-Apple    origin/Model-Banana   origin/Model-Cherry
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (master)
+$ git checkout -b Model-Apple origin/Model-Apple
+Branch Model-Apple set up to track remote branch Model-Apple from origin.
+Switched to a new branch 'Model-Apple'
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$ git branch
+* Model-Apple
+  master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$ git checkout -b Model-Apple origin/Model-Banana sh.exe": words_: bad array subscript
+sh.exe": words_: bad array subscript
+
+Display all 66 possibilities? (y or n)
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$ git checkout -b Model-Banana origin/Model-Banana
+Branch Model-Banana set up to track remote branch Model-Banana from origin.
+Switched to a new branch 'Model-Banana'
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git checkout -b Model-Cherry origin/Model-Cherry
+Branch Model-Cherry set up to track remote branch Model-Cherry from origin.
+Switched to a new branch 'Model-Cherry'
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Cherry)
+$ git branch
+  Model-Apple
+  Model-Banana
+* Model-Cherry
+  master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Cherry)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/Hotel-1001-BeijinXinYi
+  origin/Model-Apple
+  origin/Model-Banana
+  origin/Model-Cherry
+  origin/master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Cherry)
+$ git checkout -b Hotel-1001-BeijinXinYi ori
+origin/HEAD                     origin/Model-Apple              origin/Model-Cherry
+origin/Hotel-1001-BeijinXinYi   origin/Model-Banana             origin/master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Cherry)
+$ git checkout -b Hotel-1001-BeijinXinYi origin/Hotel-1001-BeijinXinYi
+Branch Hotel-1001-BeijinXinYi set up to track remote branch Hotel-1001-BeijinXinYi from origin.
+Switched to a new branch 'Hotel-1001-BeijinXinYi'
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Hotel-1001-BeijinXinYi)
+$ git branch
+* Hotel-1001-BeijinXinYi
+  Model-Apple
+  Model-Banana
+  Model-Cherry
+  master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Hotel-1001-BeijinXinYi)
+$ git checkout Mod
+Model-Apple    Model-Banana   Model-Cherry
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Hotel-1001-BeijinXinYi)
+$ git checkout Model-Apple
+Switched to branch 'Model-Apple'
+Your branch is up-to-date with 'origin/Model-Apple'.
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$ git checkout Model-Banana
+Switched to branch 'Model-Banana'
+Your branch is up-to-date with 'origin/Model-Banana'.
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git branch
+  Hotel-1001-BeijinXinYi
+  Model-Apple
+* Model-Banana
+  Model-Cherry
+  master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ gits
+sh.exe": gits: command not found
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git status
+On branch Model-Banana
+Your branch is up-to-date with 'origin/Model-Banana'.
+
+nothing to commit, working directory clean
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push origin Banana
+error: src refspec Banana does not match any.
+error: failed to push some refs to 'ssh://192.168.1.161:29418/FrontEnd-TermWebUI'
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push Banana
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'Banana' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git branch
+  Hotel-1001-BeijinXinYi
+  Model-Apple
+* Model-Banana
+  Model-Cherry
+  master
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push origin Mod
+Model-Apple    Model-Banana   Model-Cherry
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push origin Model-Banana
+Everything up-to-date
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git checkout Mod
+Model-Apple    Model-Banana   Model-Cherry
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Banana)
+$ git checkout Model-Apple
+Switched to branch 'Model-Apple'
+Your branch is up-to-date with 'origin/Model-Apple'.
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$ ls
+doc  webpage
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$ git pull
+Already up-to-date.
+
+zxs@ZXS-PC /f/works/FrontEnd-TermWebUI (Model-Apple)
+$
