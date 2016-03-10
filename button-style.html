@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>按钮样式</title>
+    <style type="text/css">
+    
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    
+    .btn--full {
+        width: 100%;
+        *padding-right: 0;
+        *padding-left: 0;
+    }
+    
+    .btn,
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 11px 20px 9px;
+        margin: 0;
+        vertical-align: middle;
+        text-align: center;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.6);
+        font: inherit;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px #7d7d7d;
+        cursor: pointer;
+        overflow: visible;
+        -webkit-transition: background .2s;
+        transition: background .2s;
+        background: #75a01c;
+        background-image: -webkit-linear-gradient(bottom, #75a01c 0, #acce4e 50px);
+        background-image: linear-gradient(to top, #75a01c 0, #acce4e 50px);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#acce4e', endColorstr='#75a01c', GradientType=0);
+    }
+
+    .btn--alt {
+        background: #1381aa;
+        background-image: -webkit-linear-gradient(bottom, #1381aa 0, #1fa7da 50px);
+        background-image: linear-gradient(to top, #1381aa 0, #1fa7da 50px);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1fa7da', endColorstr='#1381aa', GradientType=0);
+        color: #fff;
+    }
+    
+    a {
+        background-color: transparent;
+        color: #82a91c;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+    
+    .product-card__cta {
+        text-align: center;
+    }
+    
+    .product-card {
+        color: #fff;
+    }
+    
+    [class^="col-"],
+    [class*=" col-"],
+    .grid__cell {
+        font-size: 14px;
+        font-size: 1rem;
+    }
+    
+    .grid {
+        list-style: none;
+        font-size: 0;
+    }
+    
+    html {
+        font: .875em/1.5 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        color: #382e23;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a class="btn btn--alt btn--full" onclick="" href="">Button</a>
+    </div>
+</body>
+
+</html>
