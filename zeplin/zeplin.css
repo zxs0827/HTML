@@ -153,6 +153,7 @@ font-weight: 900            Roboto-Black
 
     --light-orange: #fdbd39;
     --light-orange-15pc: rgba(253, 189, 57, 0.15);
+    --light-orange-50pc: rgba(253, 189, 57, 0.5);
 
     --orange: #f69833;
     --orange-15pc: rgba(246, 152, 51, 0.15);
@@ -177,13 +178,14 @@ font-weight: 900            Roboto-Black
     --turquoise-15pc: rgba(13, 207, 218, 0.15);
     --turquoise-30pc: rgba(13, 207, 218, 0.3);
 
-    --blue: #3b99fc;
-
-    --cornflower-blue: #4285f4;
+    --cornflower-blue: #419bf9;
+    --cornflower-blue-20pc: rgba(65, 154, 249, 0.2);
+    --cornflower-blue-50pc: rgba(65, 154, 249, 0.5);
 
     --whitey: #f4f4f4;
     --whitey-90pc: rgba(244, 244, 244, 0.9);
     --whitey-50pc: rgba(244, 244, 244, 0.5);
+    --whitey-15pc: rgba(244, 244, 244, 0.15);
 
     --white-70pc: rgba(255, 255, 255, 0.7);
     --white-80pc: rgba(255, 255, 255, 0.8);
@@ -192,19 +194,28 @@ font-weight: 900            Roboto-Black
 
     --warm-gray: #bcb5b9;
     --warm-gray-50pc: rgba(188, 181, 185, 0.5);
+    --warm-gray-30pc: rgba(188, 181, 185, 0.3);
 
     --maroon: #574751;
     --maroon-70pc: rgba(87, 71, 81, 0.7);
     --maroon-60pc: rgba(87, 71, 81, 0.6);
     --maroon-50pc: rgba(87, 71, 81, 0.5);
+    --maroon-30pc: rgba(87, 71, 81, 0.3);
     --maroon-20pc: rgba(87, 71, 81, 0.2);
+    --maroon-15pc: rgba(87, 71, 81, 0.15);
 
     --code-bg: #474e5d;
     --code-blue: #27f4ff;
     --code-green: #c3ff5b;
+
+    --light-gray: #f6f6f6;
+
+    --middle-gray: #eae8ea;
 }
 
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
 
@@ -301,6 +312,10 @@ button {
     box-shadow: 0 6px 10px 0 var(--maroon-20pc);
 }
 
+paper-ripple {
+    pointer-events: none;
+}
+
 paper-ripple.yellow {
     color: #fecf33;
     color: var(--yellow);
@@ -321,9 +336,29 @@ paper-ripple.maroon {
     color: var(--maroon);
 }
 
+paper-ripple.maroon-15pc {
+    color: rgba(87, 71, 81, 0.15);
+    color: var(--maroon-15pc);
+}
+
 paper-ripple.cornflowerBlue {
-    color: #4285f4;
+    color: #419bf9;
     color: var(--cornflower-blue);
+}
+
+paper-ripple.whitey {
+    color: #f4f4f4;
+    color: var(--whitey);
+}
+
+.peach-ripple:hover {
+    background-color: rgba(238, 103, 35, 0.15);
+    background-color: var(--peach-15pc);
+}
+
+.whitey-ripple:hover {
+    background-color: #f4f4f4;
+    background-color: var(--whitey);
 }
 
 table {
@@ -391,7 +426,7 @@ code {
 }
 
 #loading {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
