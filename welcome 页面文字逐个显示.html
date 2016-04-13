@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		p{
+			font-size: 30px;
+			text-align: center;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	
+	<p></p>
+
+
+<script type="text/javascript" src="js/common/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var str = "欢迎王先生莅临四季酒店！";
+    var letterArray = [];
+
+    for (var i = 0; i < str.length; i++) {
+      letterArray.push(str[i]);
+    };
+
+    $.each(letterArray,function(index,el){
+      $('p').append('<span style="display: none;">'+el+'</span>');
+      setTimeout(function(){
+        $('p').find('span:eq('+index+')').show();
+      },index*2000);
+    });
+  });
+</script>
+</body>
+</html>

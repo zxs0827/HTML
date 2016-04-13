@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS实现行序号</title>
+    <meta charset="utf-8">
+	<style type="text/css">
+		pre.line-numbers {
+		    position: relative;
+		    padding-left: 3.8em;
+		    counter-reset: linenumber;
+		}
+
+		pre.line-numbers>code {
+		    position: relative;
+		}
+
+		.line-numbers .line-numbers-rows {
+		    position: absolute;
+		    pointer-events: none;
+		    top: 0;
+		    font-size: 100%;
+		    left: -3.8em;
+		    width: 3em;
+		    letter-spacing: -1px;
+		    border-right: 1px solid #999;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+
+		.line-numbers-rows>span {
+		    pointer-events: none;
+		    display: block;
+		    counter-increment: linenumber;
+		}
+
+		.line-numbers-rows>span:before {
+		    content: counter(linenumber);
+		    color: #999;
+		    display: block;
+		    padding-right: .8em;
+		    text-align: right;
+		}
+
+
+		/* 样式美化 */
+
+		pre[class*="language-"] {
+		    background: url("../../img/blueprint-dark.fd85a7a074ae.png") top center #fafbfc;
+		    border-left: 5px solid #558abb;
+		    color: #4d4e53;
+		    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+		    font-weight: 400;
+		    -moz-tab-size: 4;
+		    tab-size: 4;
+		    -moz-hyphens: none;
+		    -webkit-hyphens: none;
+		    -ms-hyphens: none;
+		    hyphens: none;
+		}
+
+		.token.property,
+		.token.symbol,
+		.token.tag {
+		    color: #905;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<pre class="brush:css line-numbers  language-css"><code class=" language-css"><span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
+<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> <span class="token number">2.3</span><span class="token punctuation">;</span>
+
+<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> <span class="token number">2</span>, <span class="token number">0</span>, infinite<span class="token punctuation">;</span><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</body>
+</html>
