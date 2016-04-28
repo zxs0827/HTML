@@ -1,84 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8" > 
-	<title>网站整理</title>
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			background-color: #FFFFFF;
-			color: #2F0000;
-		}
-		
-		a {
-			color: #2F0000;
-			text-decoration: none;
-		}
-
-		ul#list li{
-			margin: 20px;
-			list-style: none;
-			font-size: 0;
-		}
-
-		li a {
-			vertical-align: middle;
-			font-size: 16px;
-			text-transform: capitalize;
-		}
-		
-		li img {
-			max-height: 22px;
-			vertical-align: middle;
-			margin: 0px 10px;
-		}
-
-	</style>
+    <meta charset="utf-8">
+    <title>网站整理</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #FFFFFF;
+        color: #2F0000;
+    }
+    
+    a {
+        color: #2F0000;
+        text-decoration: none;
+    }
+    
+    ul#list li {
+        margin: 20px;
+        list-style: none;
+        font-size: 0;
+    }
+    
+    li a {
+        vertical-align: middle;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    
+    li img {
+        max-height: 22px;
+        vertical-align: middle;
+        margin: 0px 10px;
+    }
+    
+    @font-face {
+        font-family: "iconfont";
+        src: url('iconfont.eot?t=1458269290?3.18');
+        /* IE9*/
+        src: url('iconfont.eot?t=1458269290#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('iconfont.woff?t=1458269290?3.18') format('woff'), /* chrome, firefox */
+        url('iconfont.ttf?t=1458269290?3.18') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('iconfont.svg?t=1458269290#iconfont') format('svg');
+        /* iOS 4.1- */
+    }
+    
+    .uichina {
+        font-family: iconfont;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+    
+    .uichina::after {
+        content: "\e6bc";
+    }
+    </style>
 </head>
+
 <body>
-
-<ul id="list">
-	<li><img src="logo/jquery.ico"><a href="http://learn.jquery.com/about-jquery/" title="">About jQuery | jQuery Learning Center</a></li>
-	
-	<li><img src="logo/jquery.ico"><a href="http://www.jquery123.com/" title="">jQuery | jQuery 中文网</a></li>
-	
-	<li><img src="logo/firefox.png"><a href="https://www.mozilla.org/zh-CN/firefox/channel/#developer" title="">Mozilla Firefox Web Browser</a></li>
-	
-	<li><img src="logo/github.png"><a href="https://github.com/" title="">GitHub</a></li>
-	
-	<li><img src="logo/git.png"><a href="https://git-for-windows.github.io/" title="">Git for Windows</a></li>
-	
-	<li><img src="logo/unslider.png" style="background-color: #4FB0D7;"><a href="http://unslider.com/" title="">Unslider</a></li>
-	
-	<li><img src="logo/js.png"><a href="http://julian.com/research/velocity/" title="">velocity.js</a></li>
-	
-	<li><img src="logo/zeplin.ico"><a href="https://www.zeplin.io/" title="">zeplin</a></li>
-
-	<li><img src="logo/bootstrap.png"><a href="http://www.bootcss.com/" title="">Bootstrap | 中文网</a></li>
-
-	<li><img src="logo/polymer.png"><a href="https://www.polymer-project.org/1.0/" title="">polymer</a></li>
-
-	<li><img src="logo/react.ico"><a href="http://facebook.github.io/react/" title="">react.js</a></li>
-
-	<li><img src="logo/angularjs.png"><a href="http://docs.angularjs.cn/api" title="">angularjs</a></li>
-
-	<li><img src="logo/stackoverflow.ico"><a href="http://stackoverflow.com/" title="">stackoverflow</a></li>
-
-	<li><img src="logo/less.png"><a href="http://www.lesscss.net/" title="">less</a></li>
-
-	<li><img src="logo/webcolourdata.ico"><a href="http://webcolourdata.com/" title="">web colour data | 网站用色</a></li>
-	
-	<li><img src="logo/unicodetable.png"><a href="http://unicode-table.com/en/#control-character" title="">unicode-table | 字体图标</a></li>
-	
-	<li><img src="logo/be.ico"><a href="https://www.behance.net/" title="">behance | 创意作品</a></li>
-
-
-</ul>
-
+    <ul id="list">
+        <li><img src="logo/jquery.ico"><a href="http://learn.jquery.com/about-jquery/" title="">About jQuery | jQuery Learning Center</a></li>
+        <li><img src="logo/jquery.ico"><a href="http://www.jquery123.com/" title="">jQuery | jQuery 中文网</a></li>
+        <li><img src="logo/firefox.png"><a href="https://www.mozilla.org/zh-CN/firefox/channel/#developer" title="">Mozilla Firefox Web Browser</a></li>
+        <li><img src="logo/github.png"><a href="https://github.com/" title="">GitHub</a></li>
+        <li><img src="logo/git.png"><a href="https://git-for-windows.github.io/" title="">Git for Windows</a></li>
+        <li><img src="logo/unslider.png" style="background-color: #4FB0D7;"><a href="http://unslider.com/" title="">Unslider</a></li>
+        <li><img src="logo/js.png"><a href="http://julian.com/research/velocity/" title="">velocity.js</a></li>
+        <li><img src="logo/zeplin.ico"><a href="https://www.zeplin.io/" title="">zeplin</a></li>
+        <li><img src="logo/bootstrap.png"><a href="http://www.bootcss.com/" title="">Bootstrap | 中文网</a></li>
+        <li><img src="logo/polymer.png"><a href="https://www.polymer-project.org/1.0/" title="">polymer</a></li>
+        <li><img src="logo/react.ico"><a href="http://facebook.github.io/react/" title="">react.js</a></li>
+        <li><img src="logo/angularjs.png"><a href="http://docs.angularjs.cn/api" title="">angularjs</a></li>
+        <li><img src="logo/stackoverflow.ico"><a href="http://stackoverflow.com/" title="">stackoverflow</a></li>
+        <li><img src="logo/less.png"><a href="http://www.lesscss.net/" title="">less</a></li>
+        <li><img src="logo/webcolourdata.ico"><a href="http://webcolourdata.com/" title="">web colour data | 网站用色</a></li>
+        <li><img src="logo/unicodetable.png"><a href="http://unicode-table.com/en/#control-character" title="">unicode-table | 字体图标</a></li>
+        <li><img src="logo/be.ico"><a href="https://www.behance.net/" title="">behance | 创意作品 在线作品集</a></li>
+        <li><img src="logo/chm.ico"><a href="http://www.softany.com/" title="">WinCHM Pro CHM 文档帮助软件</a></li>
+        <li><img src="logo/kuler.svg"><a href="https://color.adobe.com/zh/create/color-wheel/" title="">色輪 | 色彩配置 - Adobe Color CC</a></li>
+        <li><img src="logo/woothemes.png"><a href="https://www.woothemes.com/" title="">Premium WordPress Themes & Plugins by WooThemes</a></li>
+        <li><img src="logo/ds.png"><a href="https://ds-signatureart.com/" title="">DS | Signature Art</a></li>
+        <li><img src="logo/depositphotos.png"><a href="http://cn.depositphotos.com/" title="">Depositphotos: 免版税图库照片 插图 矢量艺术</a></li>
+        <li><img src="logo/" style="padding: 0px 3px;border-radius: 5px;background-color: rgb(10, 10, 10);font-size: 17px;color: rgb(255, 255, 255);font-family: '微软雅黑';font-weight: bold;" alt="css"><a href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" title="">normalize.css</a></li>
+        <li><img src="logo/" style="padding: 0px 3px;border-radius: 5px;background-color: #530F0F;font-size: 17px;color: rgb(255, 255, 255);font-family: '微软雅黑';font-weight: bold;text-shadow: 0px 0px 5px #FFAD33;" alt="jQuery Burn"><a href="http://sinetheta.github.io/burn/" title="">jQuery Burn | 燃烧字体</a></li>
+        <li><img src="logo/jqueryui.ico"><a href="http://jqueryui.com/" title="">jQuery UI</a></li>
+        <li><img src="logo/w3c.ico"><a href="https://www.w3.org/" title="">W3C</a></li>
+        <li><img src="logo/js.png"><a href="http://textillate.js.org/" title="">textillate.js</a></li>
+        <li><img src="logo/" style="background-color: #CC0000;color: #FFF;font-size: 16px;padding: 0px 3px; border-radius: 3px;" alt="mq"><a href="http://mediaqueri.es/" title="">Media Queries | 兼容屏幕尺寸设计</a></li>
+        <li><img src="logo/oscars.ico"><a href="http://www.andthewinnerisnt.com/" title="">And the winner isn't… </a></li>
+        <li><img src="logo/git.png"><a href="https://git-scm.com/book/zh/v2" title="">Git - Book</a></li>
+        <li><img src="logo/mdn.png"><a href="https://developer.mozilla.org/zh-CN/" title="">MDN | MOZILLA DEVELOPER NETWORK - Firefox 开发工具</a></li>
+        <li><img src="logo/firebug.ico"><a href="https://getfirebug.com/firebug3" title="">firebug</a></li>
+        <li><img src="logo/bower.svg"><a href="http://bower.io/" title="">Bower</a></li>
+        <li><img src="logo/docker.png"><a href="https://www.docker.com/" title="">Docker</a></li>
+        <li><img src="logo/stackshare.png"><a href="http://stackshare.io/" title="">stackshare | 软件分享 En</a></li>
+        <li><span class="uichina" style="margin: 0 10px;"></span><a href="http://www.ui.cn/" title="">UI 中国</a></li>
+        <li><img src="logo/pinterest.png" alt=""><a href="https://www.pinterest.com/" title="">Pinterest</a></li>
+    </ul>
 </body>
+
 </html>
